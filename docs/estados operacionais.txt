@@ -1,0 +1,308 @@
+inventário 
+
+ CHAT
+Nova conversa
+Conversa em andamento
+Detalhes da conversa
+Pesquisa de conversas
+Renomear conversa
+Arquivar conversa
+Excluir conversa
+Compartilhar conversa
+Exportar conversa
+Anexar arquivo
+Visualizar anexo
+Visualização de imagem
+Visualização de PDF
+Resultado de visão/IA
+Ação executada pela Flow
+Confirmação antes de ação
+Resultado da ação
+Erro na execução da ação
+Chat sem histórico
+Chat offline
+ROTINAS
+Criar rotina
+Editar rotina
+Detalhes da rotina
+Duplicar rotina
+Pausar rotina
+Ativar rotina
+Excluir rotina
+Confirmar exclusão
+Testar rotina
+Resultado do teste
+Criar gatilho
+Criar condição
+Criar ação
+Reordenar ações
+Selecionar horário
+Selecionar recorrência
+Selecionar dispositivo
+Selecionar integração
+Histórico da rotina
+Detalhes de execução
+Falha da rotina
+Rotina sem ações
+Rotina desativada
+TIMERS
+Criar timer
+Timer em execução
+Timer pausado
+Timer concluído
+Timer cancelado
+Editar timer
+Duplicar timer
+Excluir timer
+Histórico de timers
+Detalhes do timer
+Criar timer recorrente
+Configurar som
+Configurar vibração
+Configurar Wear OS
+Timer em segundo plano
+Timer limite do plano
+ CASA INTELIGENTE
+Adicionar dispositivo
+Procurando dispositivos
+Pareamento
+Código/QR Code de conexão
+Dispositivo conectado
+Falha no pareamento
+Detalhes do dispositivo
+Editar dispositivo
+Remover dispositivo
+Confirmar remoção
+Criar cômodo
+Editar cômodo
+Excluir cômodo
+Criar cena
+Editar cena
+Executar cena
+Criar automação residencial
+Histórico do dispositivo
+Dispositivo offline
+Dispositivo sem permissão
+ INTEGRAÇÕES
+Catálogo de integrações
+Detalhes da integração
+Conectar integração
+Autorização OAuth
+Integração conectada
+Configurar integração
+Editar integração
+Desconectar integração
+Confirmar desconexão
+Permissões da integração
+Sincronização em andamento
+Sincronização concluída
+Falha de sincronização
+Integração expirada
+Integração indisponível
+Logs da integração
+MEMÓRIA
+Adicionar memória
+Editar memória
+Detalhes da memória
+Excluir memória
+Confirmar exclusão
+Pesquisar memória
+Filtrar memórias
+Categorizar memória
+Memória criada
+Memória atualizada
+Memória protegida
+Memória indisponível
+Importar memórias
+Exportar memórias
+ ARQUIVOS
+Upload de arquivos
+Upload em andamento
+Upload concluído
+Upload falhou
+Visualizar arquivo
+Detalhes do arquivo
+Editar informações
+Renomear arquivo
+Mover arquivo
+Criar pasta
+Editar pasta
+Excluir arquivo
+Excluir pasta
+Confirmar exclusão
+Compartilhar arquivo
+Permissões do arquivo
+Download
+Pesquisa de arquivos
+Filtros
+Arquivo não encontrado
+Armazenamento cheio
+SAÚDE
+Adicionar dado de saúde
+Editar dado
+Detalhes do indicador
+Criar meta
+Editar meta
+Concluir meta
+Histórico da meta
+Adicionar medicamento
+Editar medicamento
+Lembrete de medicamento
+Registrar medicamento tomado
+Adicionar exame
+Detalhes do exame
+Adicionar consulta
+Detalhes da consulta
+Sincronizar dispositivo fitness
+Falha na sincronização
+Dados não disponíveis
+ RECEITAS
+Pesquisar receita
+Filtros de receitas
+Detalhes da receita
+Favoritar receita
+Remover favorito
+Compartilhar receita
+Abrir receita no site externo
+Histórico de receitas
+Lista de favoritos
+Preferências alimentares
+Ingredientes disponíveis
+Busca por ingredientes
+ FLOW AI
+Configurar personalidade
+Configurar comportamento
+Configurar autonomia
+Selecionar modelo
+Configurar visão
+Configurar voz
+Testar voz
+Treinar Wake Word
+Testar Wake Word
+Configurar microfone
+Permissões de voz
+Dispositivos autorizados
+Diagnóstico de voz
+Privacidade de áudio
+Configurar memória da Flow
+Configurar permissões da Flow
+ SKILLS
+Marketplace
+Detalhes da Skill
+Instalar Skill
+Instalação concluída
+Falha na instalação
+Minhas Skills
+Criar Skill
+Editar Skill
+Configurar Skill
+Permissões da Skill
+Executar Skill
+Resultado da Skill
+Logs da Skill
+Publicar Skill
+Revisão antes da publicação
+Skill publicada
+Despublicar Skill
+Remover Skill
+API / DESENVOLVEDOR
+Criar API Key
+API Key criada
+Visualizar API Key
+Revogar API Key
+Confirmar revogação
+Criar Webhook
+Editar Webhook
+Testar Webhook
+Webhook recebido
+Webhook falhou
+Logs de Webhook
+Detalhes da requisição
+Sandbox
+Testar endpoint
+Resultado da requisição
+Erro da API
+Limite atingido
+Documentação do endpoint
+ASSINATURA / PAGAMENTOS
+Comparação de planos
+Selecionar plano
+Checkout
+Confirmar pagamento
+Pagamento aprovado
+Pagamento pendente
+Pagamento recusado
+Adicionar cartão
+Editar cartão
+Remover cartão
+Confirmar remoção
+Adicionar Pix
+Gerar boleto
+Detalhes da cobrança
+Visualizar fatura
+Download da nota fiscal
+Upgrade
+Downgrade
+Cancelar assinatura
+Confirmar cancelamento
+Reativar assinatura
+ SEGURANÇA / PRIVACIDADE
+Alterar senha
+Ativar 2FA
+Configurar autenticador
+Confirmar 2FA
+Códigos de recuperação
+Regenerar códigos
+Dispositivos conectados
+Encerrar sessão
+Encerrar todas as sessões
+Login recente
+Alerta de segurança
+Atividade suspeita
+Confirmar identidade
+Exportar dados
+Solicitar exclusão
+Confirmar exclusão
+Gerenciar consentimentos
+ SISTEMA
+Central de notificações
+Preferências de notificações
+Notificação detalhada
+Marcar como lida
+Limpar notificações
+Status do sistema
+Serviço indisponível
+Manutenção
+Incidente
+Detalhes do incidente
+ SUPORTE
+Pesquisa de ajuda
+Artigo
+Tutorial
+FAQ
+Abrir chamado
+Chamado criado
+Detalhes do chamado
+Responder chamado
+Anexar arquivo ao chamado
+Encerrar chamado
+Reabrir chamado
+Status do suporte
+ESTADOS GLOBAIS
+Loading
+Empty State
+Sem resultados
+Erro de conexão
+Offline
+Erro 404
+Erro 500
+Permissão negada
+Sessão expirada
+Recurso bloqueado pelo plano
+Limite atingido
+Confirmação de ação
+Operação concluída
+Operação falhou
+Serviço temporariamente indisponível
+
+Isso dá um catálogo de aproximadamente 287 telas/estados operacionais.

@@ -1,0 +1,148 @@
+🍳 MÓDULO RECEITAS DA FLOW - BUSCA EM SITES CONFIÁVEIS (SÓ AUTOMAÇÃO)
+
+Flow NUNCA copia receita e hospeda como sua. Ela faz igual você faz: abre navegador do usuário, busca no site confiável, e mostra o link + resumo com créditos. 100% legal.
+FLUXO QUE VOCÊ PEDIU:
+Code
+
+Usuário: "Flow, quero receita de bolo de cenoura"
+Flow: "Quer que eu busque nos sites confiáveis pra você? Tenho 15 sites"
+Usuário: "Sim"
+Flow: [Abre navegador Ubuntu - Playwright] → Busca em TudoGostoso, Panelinha...
+→ Encontra 3 receitas
+→ Entrega: "Achei no TudoGostoso - Bolo de cenoura fofinho - 45min - Link: ... Quer que eu leia os ingredientes?"
+
+Show less
+📋 LISTA DE SITES CONFIÁVEIS QUE A FLOW VAI BUSCAR
+
+BRASIL - TOP CONFIÁVEIS (Prioridade 1):
+
+    TudoGostoso - tudogostoso.com.br - maior do BR
+    Panelinha (Rita Lobo) - panelinha.com.br - confiável, testado
+    Receitas Nestlé - receitas.nestle.com.br - testadas
+    GShow Receitas - gshow.globo.com/receitas
+    TudoReceitas - tudoreceitas.com
+    Receiteria - receiteria.com.br
+    Ana Maria Braga - anamariabraga.globo.com/receitas
+    Panelinha - panelinha.com.br
+    Mundo em Revista - sem copyright, CC
+
+FIT / SAUDÁVEL (Pro Google Fit):
+10. Tasty Demais - fit
+11. Receitas Light - receitalight.com
+12. Vitat - vitat.com.br/receitas
+
+INTERNACIONAL - CONFIÁVEIS:
+13. Tasty - tasty.co
+14. AllRecipes - allrecipes.com
+15. BBC Good Food - bbcgoodfood.com
+16. Minimalist Baker - minimalistbaker.com - vegano
+🏗️ ARQUITETURA - COMO FLOW BUSCA (SEM COPIAR)
+BACKEND CLOUDFLARE WORKER + FRONTEND UBUNTU
+TypeScript
+
+// workers/src/routes/recipes.ts
+
+const TRUSTED_SITES = [
+  {name: "TudoGostoso", url: "https://www.tudogostoso.com.br/busca?q=", domain: "tudogostoso.com.br"},
+  {name: "Panelinha", url: "https://www.panelinha.com.br/busca?query=", domain: "panelinha.com.br"},
+  {name: "Receitas Nestlé", url: "https://www.receitasnestle.com.br/search?query=", domain: "receitas.nestle.com.br"},
+  // ... 15 sites
+];
+
+app.post("/api/recipes/search", async (c) => {
+  const {query, site} = await c.req.json(); // query: "bolo cenoura", site: "all" ou "tudogostoso"
+  
+  // Se usuário permitiu navegar, manda comando pro cliente Ubuntu via WebSocket
+  // O Worker NÃO faz scraping na nuvem (evita bloqueio)
+  // Quem navega é o Playwright no PC do usuário (IP dele, igual ele navegaria)
+  
+  return c.json({
+    action: "search_on_client",
+    sites: TRUSTED_SITES,
+    query,
+    instructions: "Abrir navegador, buscar, extrair título, tempo, link"
+  });
+});
+
+app.post("/api/recipes/deliver", async (c) => {
+  const {title, ingredients_preview, link, source} = await c.req.json();
+  // Salva no Firestore /recipes_history com créditos
+  await c.env.DB.prepare("INSERT INTO recipes (userId, title, source, link, at) VALUES (?,?,?,?)").bind(userId, title, source, link).run();
+  
+  return c.json({
+    message: `Achei no ${source}: ${title} - Link: ${link} - Quer que eu abra?`,
+    legal: "Fonte citada, link original, sem cópia integral"
+  });
+});
+
+Show less
+FRONTEND UBUNTU - PLAYWRIGHT (Quem realmente busca)
+Python
+
+# src/modules/recipes.py - roda no Ubuntu do usuário
+
+from playwright.sync_api import sync_playwright
+
+def search_recipe(query, trusted_sites, ask_permission=True):
+    if ask_permission:
+        # Flow pergunta igual Meta AI: "Quer que eu acesse o navegador e busque?"
+        speak("Encontrei 15 sites confiáveis. Quer que eu acesse o navegador e busque receita de " + query + " pra você?")
+        if not user_said_yes(): return
+    
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False) # usuário vê abrindo
+        page = browser.new_page()
+        
+        results = []
+        for site in trusted_sites[:3]: # busca nos 3 primeiros pra ser rápido
+            page.goto(f"{site['url']}{query}")
+            # Extrai só título, tempo, link - NÃO copia ingredientes inteiros
+            title = page.locator("h2.recipe-title").first.text_content()
+            time = page.locator(".time").first.text_content()
+            link = page.locator("a.recipe").first.get_attribute("href")
+            results.append({"source": site['name'], "title": title, "time": time, "link": link})
+        
+        # Entrega pra Flow
+        return results
+
+# Exemplo uso:
+# search_recipe("bolo de cenoura fofinho", TRUSTED_SITES)
+# Retorna: [{source: "TudoGostoso", title: "Bolo de cenoura fofinho", time: "45min", link: "https://..."}]
+
+Show less
+💬 COMO FLOW FALA (Igual Meta AI)
+
+Usuário: "Flow, receita de pão de queijo"
+Flow: "Tenho 15 sites confiáveis: TudoGostoso, Panelinha, Nestlé... Quer que eu acesse o navegador e busque pra você?"
+Usuário: "Sim"
+Flow: [Abre navegador, usuário vê] "Achei 3 opções:
+
+    TudoGostoso - Pão de queijo mineiro - 40min - 4.8 estrelas
+    Panelinha - Pão de queijo da Rita - 30min
+    Quer que eu abra qual? Ou quer fit?"
+
+Usuário: "Abre a primeira"
+Flow: [Abre link] "Abrindo TudoGostoso... Tá na tela! Quer que eu leia os ingredientes em voz alta ou manda pro WhatsApp?"
+
+Legal: Flow só abre o site original, não copia. Ingredientes são lidos do site aberto, não hospedados por você. Sempre mostra fonte e link.
+🔒 PRA FICAR 100% SAFE DE DIREITO AUTORAL
+
+No termo:
+
+    "Flow AI não hospeda receitas. Flow automatiza navegação do usuário nos sites de receitas de sua escolha, exibindo links e créditos originais. Todo conteúdo pertence ao site fonte."
+
+O que NUNCA fazer:
+
+    ❌ Copiar receita inteira pro seu banco e servir como sua
+    ✅ Sempre: Título + tempo + link + "Fonte: TudoGostoso" + botão "Ver receita original"
+
+📱 INTEGRAÇÃO COM GOOGLE FIT + ROTINA
+
+Receita Fit automática:
+Code
+
+Fit detecta treino perna -> Flow: "Treino foi pesado! Quer receita de panqueca proteica pós-treino?"
+-> Busca em sites fit -> entrega
+
+Rotina:
+"Flow, toda segunda 18h me manda receita fit da semana" -> Cron + busca + manda no WhatsApp link

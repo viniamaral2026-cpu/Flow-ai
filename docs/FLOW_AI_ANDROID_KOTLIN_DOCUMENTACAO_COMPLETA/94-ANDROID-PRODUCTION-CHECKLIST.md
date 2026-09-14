@@ -1,0 +1,22 @@
+# Android Production Checklist
+- [ ] Kotlin/Gradle atualizados e compatíveis
+- [ ] lint
+- [ ] unit tests
+- [ ] instrumentation/UI tests
+- [ ] build release
+- [ ] AAB validado
+- [ ] assinatura configurada
+- [ ] secrets fora do repositório
+- [ ] permissões revisadas
+- [ ] FCM validado
+- [ ] API/WebSocket validado
+- [ ] login/logout
+- [ ] voz
+- [ ] notificações
+- [ ] offline/reconexão
+- [ ] crash reporting
+- [ ] acessibilidade
+- [ ] performance
+- [ ] política de privacidade
+- [ ] materiais Play Store
+- [ ] rollout/rollback documentado

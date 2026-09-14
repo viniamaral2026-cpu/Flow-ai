@@ -1,0 +1,567 @@
+FLOW AI — INVENTÁRIO COMPLETO DE PÁGINAS
+2. AUTENTICAÇÃO
+Login
+Criar conta
+Confirmação de e-mail
+Reenviar confirmação
+Esqueci minha senha
+Redefinir senha
+Senha alterada
+Conta criada
+Conta bloqueada
+Conta suspensa
+Sessão expirada
+Login com Google
+Login com Apple
+Login com outros provedores
+Verificação de segurança
+Verificação de identidade
+Código de acesso
+Recuperação de conta
+3. ONBOARDING
+Boas-vindas
+Criar perfil
+Nome do usuário
+Foto/avatar
+Preferência de idioma
+Fuso horário
+Personalidade da FLOW
+Nome da FLOW
+Voz da FLOW
+Wake Word
+Permissões
+Microfone
+Notificações
+Localização
+Câmera
+Arquivos
+Integrações iniciais
+Dispositivo principal
+Preferências
+Objetivos
+Finalização do onboarding
+4. DASHBOARD / HOME DO APP
+Dashboard principal
+Dashboard personalizado
+Pesquisa global
+Central de ações
+Atividade recente
+Atalhos
+Sugestões da FLOW
+Favoritos
+Itens recentes
+Central de notificações
+Notificação detalhada
+Status da FLOW
+FLOW pensando/processando
+FLOW ouvindo
+FLOW falando
+FLOW executando ação
+FLOW aguardando confirmação
+5. CHAT
+Nova conversa
+Conversa em andamento
+Detalhes da conversa
+Pesquisa de conversas
+Renomear conversa
+Arquivar conversa
+Conversas arquivadas
+Excluir conversa
+Confirmar exclusão
+Compartilhar conversa
+Exportar conversa
+Chat vazio
+Chat offline
+Erro no chat
+Anexar arquivo
+Visualizar anexo
+Visualização de imagem
+Visualização de PDF
+Resultado de visão
+Resultado da IA
+Ação executada pela FLOW
+Confirmação antes de ação
+Resultado da ação
+Erro da ação
+Pesquisa dentro da conversa
+Mensagem copiada
+Regenerar resposta
+Continuar resposta
+Feedback da resposta
+6. VOZ / ASSISTENTE
+Ativar voz
+Assistente ouvindo
+Assistente processando
+Assistente respondendo
+Histórico de voz
+Configuração de voz
+Testar voz
+Treinar Wake Word
+Testar Wake Word
+Microfone e permissões
+Dispositivos de voz autorizados
+Diagnóstico de voz
+Privacidade de áudio
+Dados de áudio
+Histórico de comandos de voz
+Voz indisponível
+Microfone bloqueado
+7. ROTINAS / AUTOMAÇÕES
+Lista de rotinas
+Criar rotina
+Editar rotina
+Detalhes da rotina
+Duplicar rotina
+Pausar rotina
+Ativar rotina
+Excluir rotina
+Confirmar exclusão
+Testar rotina
+Resultado do teste
+Criar gatilho
+Criar condição
+Criar ação
+Reordenar ações
+Selecionar horário
+Selecionar recorrência
+Selecionar dispositivo
+Selecionar integração
+Histórico da rotina
+Detalhes de execução
+Falha da rotina
+Rotina sem ações
+Rotina desativada
+8. TIMERS / ALARMES
+Lista de timers
+Criar timer
+Timer em execução
+Timer pausado
+Timer concluído
+Timer cancelado
+Editar timer
+Duplicar timer
+Excluir timer
+Histórico de timers
+Detalhes do timer
+Timer recorrente
+Configurar som
+Configurar vibração
+Configurar Wear OS
+Timer em segundo plano
+Limite de timers do plano
+9. CASA INTELIGENTE
+Casa inteligente
+Cômodos
+Detalhes do cômodo
+Criar cômodo
+Editar cômodo
+Excluir cômodo
+Dispositivos
+Adicionar dispositivo
+Procurando dispositivos
+Pareamento
+Código/QR Code
+Dispositivo conectado
+Falha no pareamento
+Detalhes do dispositivo
+Editar dispositivo
+Remover dispositivo
+Confirmar remoção
+Criar cena
+Editar cena
+Executar cena
+Criar automação residencial
+Histórico do dispositivo
+Dispositivo offline
+Dispositivo sem permissão
+10. INTEGRAÇÕES
+Catálogo de integrações
+Pesquisa de integração
+Detalhes da integração
+Conectar integração
+Autorização OAuth
+Integração conectada
+Configurar integração
+Editar integração
+Desconectar integração
+Confirmar desconexão
+Permissões
+Sincronização
+Sincronização concluída
+Falha de sincronização
+Integração expirada
+Integração indisponível
+Logs da integração
+11. INTEGRAÇÕES ESPECÍFICAS
+WhatsApp
+Configurar WhatsApp
+WhatsApp conectado
+WhatsApp desconectado
+Conversas do WhatsApp
+Instagram
+Configurar Instagram
+Instagram conectado
+Gmail
+Configurar Gmail
+Gmail conectado
+Caixa de entrada
+E-mail detalhado
+Criar e-mail
+Google Calendar
+Configurar Calendar
+Agenda
+Evento detalhado
+Criar evento
+Google Drive
+Arquivos do Drive
+Microsoft
+Discord
+Slack
+Spotify
+Wear OS
+Serviços de casa inteligente
+12. MEMÓRIA
+Memória
+Adicionar memória
+Editar memória
+Detalhes da memória
+Excluir memória
+Confirmar exclusão
+Pesquisar memória
+Filtrar memórias
+Categorizar memória
+Memória criada
+Memória atualizada
+Memória protegida
+Memória indisponível
+Importar memórias
+Exportar memórias
+Preferências de memória
+O que a FLOW lembra
+Controle de memória
+13. ARQUIVOS
+Arquivos
+Upload
+Upload em andamento
+Upload concluído
+Upload falhou
+Visualizar arquivo
+Detalhes do arquivo
+Editar informações
+Renomear arquivo
+Mover arquivo
+Criar pasta
+Editar pasta
+Excluir arquivo
+Excluir pasta
+Confirmar exclusão
+Compartilhar arquivo
+Permissões
+Download
+Pesquisa
+Filtros
+Arquivo não encontrado
+Armazenamento cheio
+14. SAÚDE E BEM-ESTAR
+Saúde
+Visão geral
+Indicadores
+Detalhes do indicador
+Adicionar dado
+Editar dado
+Metas
+Criar meta
+Editar meta
+Concluir meta
+Histórico da meta
+Medicamentos
+Adicionar medicamento
+Editar medicamento
+Lembrete
+Registrar medicamento
+Exames
+Adicionar exame
+Detalhes do exame
+Consultas
+Adicionar consulta
+Detalhes da consulta
+Dispositivos fitness
+Sincronizar dispositivo
+Falha de sincronização
+Dados indisponíveis
+15. RECEITAS / ALIMENTAÇÃO
+Receitas
+Pesquisa de receitas
+Filtros
+Detalhes da receita
+Favoritar
+Remover favorito
+Compartilhar
+Abrir receita externa
+Histórico
+Favoritos
+Preferências alimentares
+Ingredientes disponíveis
+Buscar por ingredientes
+Receita gerada pela FLOW
+Plano alimentar
+Lista de compras
+16. PERSONALIZAÇÃO DA FLOW
+Personalidade
+Comportamento
+Autonomia
+Modelo de IA
+Visão
+Voz
+Testar voz
+Memória da FLOW
+Permissões da FLOW
+Preferências de resposta
+Nível de criatividade
+Nível de proatividade
+Estilo de comunicação
+Regras personalizadas
+17. SKILLS
+Marketplace
+Pesquisa de Skills
+Categorias
+Detalhes da Skill
+Instalar Skill
+Instalação concluída
+Falha na instalação
+Minhas Skills
+Criar Skill
+Editar Skill
+Configurar Skill
+Permissões da Skill
+Executar Skill
+Resultado da Skill
+Logs da Skill
+Publicar Skill
+Revisão antes da publicação
+Skill publicada
+Despublicar Skill
+Remover Skill
+18. API / DESENVOLVEDOR
+Developer Dashboard
+Visão geral
+API Keys
+Criar API Key
+API Key criada
+Visualizar API Key
+Revogar API Key
+Confirmar revogação
+Webhooks
+Criar Webhook
+Editar Webhook
+Testar Webhook
+Webhook recebido
+Webhook falhou
+Logs
+Detalhes da requisição
+Sandbox
+Testar endpoint
+Resultado da requisição
+Erro da API
+Limites
+Limite atingido
+Documentação
+Documentação do endpoint
+SDKs
+Exemplos de código
+19. CONTA / PERFIL
+Minha conta
+Perfil
+Editar perfil
+Foto
+Dados pessoais
+E-mail
+Telefone
+Idioma
+Região
+Fuso horário
+Preferências
+Preferências de acessibilidade
+20. SEGURANÇA
+Segurança da conta
+Alterar senha
+Ativar 2FA
+Configurar autenticador
+Confirmar 2FA
+Códigos de recuperação
+Regenerar códigos
+Dispositivos conectados
+Sessões ativas
+Encerrar sessão
+Encerrar todas as sessões
+Login recente
+Alertas de segurança
+Atividade suspeita
+Confirmar identidade
+Recuperação de conta
+21. PRIVACIDADE / DADOS
+Central de privacidade
+Central de dados
+Consentimentos
+Gerenciar consentimentos
+Exportar dados
+Solicitar exclusão
+Confirmar exclusão
+Dados da conta
+Dados da FLOW
+Histórico de atividades
+Dados de voz
+Dados de visão
+Memórias armazenadas
+Dados de integrações
+22. PLANOS / ASSINATURA
+Planos
+Comparação de planos
+Selecionar plano
+Assinatura atual
+Gerenciar assinatura
+Upgrade
+Downgrade
+Cancelar assinatura
+Confirmar cancelamento
+Reativar assinatura
+Assinatura cancelada
+Assinatura pendente
+Plano expirado
+Recurso bloqueado pelo plano
+Uso e consumo
+23. PAGAMENTOS
+Checkout
+Confirmar pagamento
+Pagamento aprovado
+Pagamento pendente
+Pagamento recusado
+Formas de pagamento
+Adicionar cartão
+Editar cartão
+Remover cartão
+Confirmar remoção
+Adicionar Pix
+Gerar boleto
+Detalhes da cobrança
+Fatura
+Histórico de pagamentos
+Nota fiscal
+Download da nota fiscal
+24. NOTIFICAÇÕES
+Central de notificações
+Preferências
+Notificação detalhada
+Marcar como lida
+Limpar notificações
+Notificações push
+Notificações por e-mail
+Notificações da FLOW
+Alertas de segurança
+Alertas de integração
+25. SUPORTE
+Central de ajuda
+Pesquisa de ajuda
+Artigo
+Tutorial
+FAQ
+Abrir chamado
+Chamado criado
+Meus chamados
+Detalhes do chamado
+Responder chamado
+Anexar arquivo
+Encerrar chamado
+Reabrir chamado
+Status do suporte
+Contato
+26. STATUS / SISTEMA
+Status do sistema
+Serviço indisponível
+Manutenção
+Incidente
+Detalhes do incidente
+Atualização do sistema
+Erro de conexão
+Offline
+Erro 404
+Erro 500
+Permissão negada
+Sessão expirada
+Recurso bloqueado
+Limite atingido
+Operação concluída
+Operação falhou
+Serviço temporariamente indisponível
+27. TELAS GLOBAIS / COMPONENTES DE FLUXO
+Loading
+Skeleton
+Empty State
+Sem resultados
+Confirmação de ação
+Modal de confirmação
+Modal de alerta
+Modal de erro
+Modal de sucesso
+Seleção de item
+Seletor de data
+Seletor de horário
+Seletor de dispositivo
+Seletor de integração
+Seletor de arquivo
+Compartilhamento
+Permissões
+Busca global
+Menu de ações
+Menu contextual
+Tela de processamento
+Tela de sucesso
+Tela de falha
+28. EXPERIÊNCIA MOBILE / PWA
+Instalação PWA
+PWA instalado
+Atualização disponível
+Atualizando aplicativo
+App offline
+Reconexão
+Permissão de notificações mobile
+Permissão de microfone mobile
+Permissão de câmera mobile
+Permissão de Bluetooth
+Permissão de localização
+Compartilhamento mobile
+Menu mobile
+Navegação mobile
+29. WEAR OS
+Tela inicial Wear OS
+FLOW no relógio
+Comando de voz
+Timer
+Notificações
+Rotinas
+Saúde
+Dispositivos
+Configurações Wear OS
+Sincronização Wear OS
+Wear OS desconectado
+30. EXPERIÊNCIAS ESPECIAIS DA FLOW
+FLOW acordada
+FLOW ouvindo
+FLOW entendendo
+FLOW pensando
+FLOW respondendo
+FLOW executando
+FLOW pedindo confirmação
+FLOW concluindo ação
+FLOW encontrou erro
+FLOW precisa de informação
+FLOW não entendeu
+FLOW offline
+FLOW sem permissão
+FLOW aprendendo
+FLOW sugerindo ação
+FLOW detectando contexto
+FLOW usando visão
+FLOW usando memória
+FLOW usando ferramenta
+FLOW executando múltiplas ações

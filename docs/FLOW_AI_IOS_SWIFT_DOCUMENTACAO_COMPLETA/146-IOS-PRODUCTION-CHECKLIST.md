@@ -1,0 +1,21 @@
+# iOS Production Checklist
+- [ ] build release
+- [ ] unit tests
+- [ ] UI tests
+- [ ] archive
+- [ ] assinatura
+- [ ] certificados protegidos
+- [ ] permissions revisadas
+- [ ] Keychain validado
+- [ ] API/WebSocket
+- [ ] login/logout
+- [ ] voz
+- [ ] APNs
+- [ ] offline/reconexão
+- [ ] crash reporting
+- [ ] acessibilidade
+- [ ] performance
+- [ ] privacidade/LGPD
+- [ ] App Store metadata
+- [ ] TestFlight
+- [ ] rollback/recovery documentado

@@ -1,0 +1,96 @@
+[2026-09-13 15:15:20] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:22:24] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:22:24] timer macarrão 20s
+[2026-09-13 15:23:08] chat(strong): time 5 minutos ovo
+[2026-09-13 15:23:12] timer ovo 360s
+[2026-09-13 15:23:12] chat timer: ovo 360s
+[2026-09-13 15:23:12] timer tomar água 60s
+[2026-09-13 15:23:12] chat timer: tomar água 60s
+[2026-09-13 15:23:32] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:23:45] receita: buscar 'bolo de cenoura'
+[2026-09-13 15:26:40] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:26:41] receita: buscar 'bolo de cenoura'
+[2026-09-13 15:26:55] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:26:59] receita: buscar 'feijoada'
+[2026-09-13 15:27:25] receita: buscar 'feijoada'
+[2026-09-13 15:28:22] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:28:24] receita: buscar 'feijoada'
+[2026-09-13 15:29:11] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:29:16] receita: buscar 'feijoada'
+[2026-09-13 15:29:52] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:29:55] receita: buscar 'feijoada'
+[2026-09-13 15:30:34] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:30:36] receita: buscar 'feijoada'
+[2026-09-13 15:32:58] timer panela 120s
+[2026-09-13 15:32:58] chat/stream timer: panela 120s
+[2026-09-13 15:34:22] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:34:23] timer acordar 30216s
+[2026-09-13 15:35:39] chat(strong): acorda às 23:59 por favor
+[2026-09-13 15:36:44] chat(strong): acorda às 23:59 por favor
+[2026-09-13 15:37:52] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:38:25] chat(strong): me acorde às 23:58 para o jogo
+[2026-09-13 15:39:27] chat(strong): me acorde às 23:58 para o jogo
+[2026-09-13 15:39:38] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:39:40] timer hora: '23:58' nome 'o jogo' seg 29899
+[2026-09-13 15:39:40] timer o jogo 29899s
+[2026-09-13 15:39:40] chat timer: o jogo 29899s
+[2026-09-13 15:40:29] FLOW Backend iniciado v3.0.0
+[2026-09-13 15:40:30] receita: buscar 'pudim'
+[2026-09-13 15:40:44] receita: buscar 'pudim'
+[2026-09-13 15:43:23] receita: buscar 'pudim'
+[2026-09-13 15:46:59] timer hora: '23:57' nome 'trabalhar' seg 29400
+[2026-09-13 15:46:59] timer trabalhar 29400s
+[2026-09-13 15:46:59] chat timer: trabalhar 29400s
+[2026-09-13 15:46:59] musica: tocar_local nao-existe.mp3
+[2026-09-13 15:46:59] receita: buscar 'panqueca'
+[2026-09-13 15:56:21] musica: tocar branco
+[2026-09-13 15:56:23] musica: tocar branco
+[2026-09-13 15:56:25] musica: tocar chuva
+[2026-09-13 15:56:38] musica: pause 
+[2026-09-13 15:56:40] musica: tocar oceano
+[2026-09-13 15:56:41] musica: parar_som 
+[2026-09-13 15:58:03] musica: play 
+[2026-09-13 16:01:15] FLOW Backend iniciado v3.0.0
+[2026-09-13 16:01:49] integracoes/clima: Taquara
+[2026-09-13 16:01:51] chat/local: Clima em Taquara: Chuva fraca nas proximidades, 13°C (sensação 11°C), umidade 83%, vento 12km/h. Máx
+[2026-09-13 16:01:51] chat/local: Agora são 16:01, domingo, 13/09/2026 (setembro).
+[2026-09-13 16:02:10] FLOW Backend iniciado v3.0.0
+[2026-09-13 16:02:19] chat/local: Clima em canela: Chuva fraca, 8°C (sensação 7°C), umidade 97%, vento 5km/h. Máx 8°Mín 6°. Nascer do 
+[2026-09-13 16:02:52] chat/local: Adicionado: arroz na lista de compras x1. Total na lista: 2 itens.
+[2026-09-13 16:02:52] chat/stream/local: Agora são 16:02, domingo, 13/09/2026 (setembro).
+[2026-09-13 16:05:48] musica: play 
+[2026-09-13 16:17:32] musica: play 
+[2026-09-13 16:23:18] timer para o café 180s
+[2026-09-13 16:23:18] chat timer: para o café 180s
+[2026-09-13 16:23:22] memoria/learn: teste integracao flow
+[2026-09-13 16:26:18] timer fim: para o café
+[2026-09-13 16:28:38] integracoes/clima: Taquara
+[2026-09-13 16:29:19] integracoes/clima: Taquara
+[2026-09-14 12:56:53] FLOW Backend iniciado v3.0.0
+[2026-09-14 13:05:20] FLOW Backend iniciado v3.0.0
+[2026-09-14 13:30:10] FLOW Backend iniciado v3.0.0
+[2026-09-14 13:38:46] FLOW Backend iniciado v3.0.0
+[2026-09-14 13:42:53] FLOW Backend iniciado v3.0.0
+[2026-09-14 13:56:54] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:30:14] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:37:42] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:41:28] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:43:56] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:46:59] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:47:17] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:49:42] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:50:30] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:52:08] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:52:36] FLOW Backend iniciado v3.0.0
+[2026-09-14 14:55:19] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:02:34] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:02:53] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:05:34] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:07:45] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:09:48] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:12:05] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:15:52] FLOW Backend iniciado v3.0.0
+[2026-09-14 15:53:55] chat/stream(strong): 
+[2026-09-14 16:11:53] integracoes/clima: Taquara
+[2026-09-14 16:13:59] receita: buscar 'test'
+[2026-09-14 16:14:27] config: {'model': 'test', 'autonomy': True}

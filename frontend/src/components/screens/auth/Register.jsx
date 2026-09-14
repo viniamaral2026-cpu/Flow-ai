@@ -1,0 +1,157 @@
+import { useState } from 'react';
+import { UserPlus, Mail, Lock } from 'lucide-react';
+
+const Register = ({ onRegister }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError(null);
+    setLoading(true);
+    
+    try {
+      // Validate inputs
+      if (!email || !password || !confirmPassword) {
+        throw new Error('Todos os campos são obrigatórios');
+      }
+      
+      if (password !== confirmPassword) {
+        throw new Error('As senhas não coincidem');
+      }
+      
+      if (password.length < 6) {
+        throw new Error('A senha deve ter pelo menos 6 caracteres');
+      }
+      
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+      // In real app, would send data to backend to create account
+      const user = {
+        id: Date.now(),
+        email: email,
+        name: email.split('@')[0]
+      };
+      
+      onRegister(user);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-[#0f0f12] flex items-center justify-center p-4">
+      <div className="w-full max-w-md space-y-6">
+        <div className="space-y-4 text-center">
+          <h1 className="text-2xl font-bold text-white">
+            Flow AI
+          </h1>
+          <p className="text-lg text-gray-400">
+            Criar sua conta
+          </p>
+        </div>
+        
+        <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="space-y-3">
+            <label className="block text-sm font-medium text-gray-300">
+              Email
+            </label>
+            <div className="flex items-center border border-gray-700 rounded-xl px-3 py-2">
+              <Mail className="h-4 w-4 text-gray-500 mr-2" />
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="seu@email.com"
+                className="flex-1 bg-transparent text-white outline-none"
+                required
+                autoFocus
+              />
+            </div>
+          </div>
+          
+          <div className="space-y-3">
+            <label className="block text-sm font-medium text-gray-300">
+              Senha
+            </label>
+            <div className="flex items-center border border-gray-700 rounded-xl px-3 py-2">
+              <Lock className="h-4 w-4 text-gray-500 mr-2" />
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="••••••••"
+                className="flex-1 bg-transparent text-white outline-none"
+                required
+                minLength="6"
+              />
+            </div>
+          </div>
+          
+          <div className="space-y-3">
+            <label className="block text-sm font-medium text-gray-300">
+              Confirmar senha
+            </label>
+            <div className="flex items-center border border-gray-700 rounded-xl px-3 py-2">
+              <Lock className="h-4 w-4 text-gray-500 mr-2" />
+              <input
+                type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="••••••••"
+                className="flex-1 bg-transparent text-white outline-none"
+                required
+                minLength="6"
+              />
+            </div>
+          </div>
+          
+          {error && (
+            <div className="bg-red-900/20 border border-red-500/30 text-red-400 px-4 py-3 rounded-xl">
+              {error}
+            </div>
+          )}
+          
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full flex items-center justify-center bg-gradient-to-r from-[#8b5cf6] to-[#06b6d4] text-white font-semibold py-3 px-4 rounded-xl transition-all duration-200 hover:from-[#7c3aed] hover:to:#059669 disabled:opacity-50"
+          >
+            {loading ? (
+              <>
+                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+                </svg>
+                Criando...
+              </>
+            ) : (
+              <>
+                <UserPlus className="mr-2 h-4 w-4" />
+                Criar conta
+              </>
+            )}
+          </button>
+        </form>
+        
+        <div className="text-center text-sm text-gray-500">
+          Já tem uma conta?{" "}
+          <button
+            onClick={() => {}}
+            className="font-medium text-cyan-400 hover:text-cyan-300"
+          >
+            Entrar
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Register;
