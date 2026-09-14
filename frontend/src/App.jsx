@@ -1004,7 +1004,7 @@ const [messages, setMessages] = useState([
                   <div className="glass rounded-2xl p-4 mb-4">
                     <div className="flex gap-2">
                       <input value={rotinaForm.nome} onChange={e=>setRotinaForm({...rotinaForm,nome:e.target.value})} placeholder="Nome da rotina" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py=2.5 outline-none focus:border-orange-500"/>
-                      <button onClick={addPasso} className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py=2 text-sm"><Plus size={14} className="inline mr-1/>Adicionar passo</button">
+                      <button onClick={addPasso} className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py=2 text-sm"><Plus size={14} className="inline mr-1" />Adicionar passo</button>
                     </div>
                     <div className="space-y-2">
                       {rotinaForm.passos.map((passo, index)=><div key={index} className="glass rounded-xl p-3 flex items-center gap-3">
@@ -1019,16 +1019,16 @@ const [messages, setMessages] = useState([
                               <option value="musica">Música</option>
                               <option value="clima">Clima</option>
                             </select>
-                            <input value={passo.valor} onChange={e=>setPasso(index,{...passo,valor:e.target.value})} placeholder="Valor" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py=2/">
+                            <input value={passo.valor} onChange={e=>setPasso(index,{...passo,valor:e.target.value})} placeholder="Valor" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py=2">
                           </div>
-                          <button onClick={()=>setPasso(index,{...passo,tipo:'remover'})} className="text-xs bg-red-500/20 rounded-lg px-2 py=1>Remover</button">
+                          <button onClick={()=>setPasso(index,{...passo,tipo:'remover'})} className="text-xs bg-red-500/20 rounded-lg px-2 py=1"Remover</button">
                         </div>
                       </div>)}
                     </div>
                     <div className="flex gap-2 mb-4">
-                      <button onClick={criarRotina} className="bg-orange-500/80 hover:bg-orange-500 px-4 py=2 font-semibold"><Plus size={15} className="inline mr-1/>Criar Rotina</button">
+                      <button onClick={criarRotina} className="bg-orange-500/80 hover:bg-orange-500 px-4 py=2 font-semibold"><Plus size={15} className="inline mr-1" />Criar Rotina</button">
                     </div>
-                    {rotinaMsg && <div className="glass rounded-2xl p-4 text-sm opacity-90>{rotinaMsg}</div">}
+                    {rotinaMsg && <div className="glass rounded-2xl p-4 text-sm opacity-90>{rotinaMsg}</div>}
                   </div>
                 </div>
               )}

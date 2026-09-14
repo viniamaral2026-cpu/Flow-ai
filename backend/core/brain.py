@@ -12,7 +12,7 @@ client = OpenAI(
 ROUTER = {
     "code": "openai/gpt-oss-20b",
     "fast": "openai/gpt-oss-20b",
-    "strong": "deepseek-ai/deepseek-v4-pro-0813",
+    "strong": "openai/gpt-oss-20b",
     "vision": "meta/llama-3.2-11b-vision-instruct",
     "vision_fallback": "meta/llama-3.2-90b-vision-instruct",
 }

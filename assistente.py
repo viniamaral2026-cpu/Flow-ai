@@ -19,7 +19,7 @@ import threading
 import wave
 
 NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
-NVIDIA_MODEL = os.environ.get("FLOW_MODEL", "deepseek-ai/deepseek-v4-pro-0813")
+NVIDIA_MODEL = os.environ.get("FLOW_MODEL", "openai/gpt-oss-20b")
 NVIDIA_KEY = os.environ.get("NVIDIA_API_KEY", "")
 EDGE_VOICE = os.environ.get("FLOW_VOZ", "pt-BR-FranciscaNeural")
 WHISPER_MODEL = os.environ.get("FLOW_WHISPER", "small")
