@@ -1,0 +1,28 @@
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Pastas locais que NÃO devem subir
+backend/
+frontend/
+OpenCode/
+opencode/
+.vscode/
+node_modules/
+
+# ZIPs locais
+docs/*.zip
+
+# Logs
+*.log
+
+# Builds e caches
+dist/
+build/
+coverage/
+.cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
