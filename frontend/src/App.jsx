@@ -1019,14 +1019,14 @@ const [messages, setMessages] = useState([
                               <option value="musica">Música</option>
                               <option value="clima">Clima</option>
                             </select>
-                            <input value={passo.valor} onChange={e=>setPasso(index,{...passo,valor:e.target.value})} placeholder="Valor" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py=2">
+                            <input value={passo.valor} onChange={e=>setPasso(index,{...passo,valor:e.target.value})} placeholder="Valor" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py=2" />
                           </div>
-                          <button onClick={()=>setPasso(index,{...passo,tipo:'remover'})} className="text-xs bg-red-500/20 rounded-lg px-2 py=1"Remover</button">
+                          <button onClick={()=>setPasso(index,{...passo,tipo:'remover'})} className="text-xs bg-red-500/20 rounded-lg px-2 py=1">Remover</button>
                         </div>
                       </div>)}
                     </div>
                     <div className="flex gap-2 mb-4">
-                      <button onClick={criarRotina} className="bg-orange-500/80 hover:bg-orange-500 px-4 py=2 font-semibold"><Plus size={15} className="inline mr-1" />Criar Rotina</button">
+                      <button onClick={criarRotina} className="bg-orange-500/80 hover:bg-orange-500 px-4 py=2 font-semibold"><Plus size={15} className="inline mr-1" />Criar Rotina</button>
                     </div>
                     {rotinaMsg && <div className="glass rounded-2xl p-4 text-sm opacity-90>{rotinaMsg}</div>}
                   </div>
@@ -1036,7 +1036,7 @@ const [messages, setMessages] = useState([
               {/* TASKS SCREEN */}
               {active==='tasks' && (
                 <div className="max-w-4xl mx-auto">
-                  <h1 className="text-2xl font-bold mb-1 flex items-center gap-2"><Calendar className="text-blue-400/> Tarefas Autônomas</h1">
+                  <h1 className="text-2xl font-bold mb-1 flex items-center gap-2"><Calendar className="text-blue-400" /> Tarefas Autônomas</h1>
                   <p className="text-sm opacity-60 mb-4>Tarefas que a Flow executa automaticamente em intervalos definidos.</p">
                   <div className="glass rounded-2xl p-4 mb-4">
                     <div className="flex gap-2">
@@ -1070,9 +1070,9 @@ const [messages, setMessages] = useState([
                               {p className="text-xs opacity-50>A cada {t.intervalo}min</p">
                             </div>
 <div className="flex gap-2">
-                              <button onClick={()=>toggleTask(t.id)} className="bg-white/10 hover:bg-white/20 rounded-xl px-3 py=2 text-sm>{t.active?'Pausar':'Ativar'}</button">
-                              <button onClick={()=>runTask(t.id)} className="bg-white/10 hover:bg-white/20 rounded-xl px-3 py=2 text-sm>Executar Agora</button">
-                              <button onClick={()=>delTask(t.id)} className="bg-red-500/20 text-red-300 hover:bg-red-500/30 rounded-xl px-3 py=2>Excluir</button">
+                              <button onClick={()=>toggleTask(t.id)}  className="bg-white/10 hover:bg-white/20 rounded-xl px-3 py=2 text-sm">{t.active?'Pausar':'Ativar'}</button>
+                              <button onClick={()=>runTask(t.id)} className="bg-white/10 hover:bg-white/20 rounded-xl px-3 py=2 text-sm">Executar Agora</button>
+                              <button onClick={()=>delTask(t.id)} className="bg-red-500/20 text-red-300 hover:bg-red-500/30 rounded-xl px-3 py=2">Excluir</button>
                             </div>
                           </div>
                         )}
@@ -1090,7 +1090,7 @@ const [messages, setMessages] = useState([
                   <div className="glass rounded-2xl p-4 mb-4">
                     <div className="flex gap-2">
                       <input value={visionPergunta} onChange={e=>setVisionPergunta(e.target.value)} onKeyDown={e=>e.key==='Enter'&&abrirVisao()} placeholder='Descreva tudo que você vê na tela e quais aplicações estão abertas' className="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py=2.5 outline-none focus:border-blue-500"/>
-                      <button onClick={abrirVisao} className="bg-gradient-to-br from-blue-500 to-indigo-500 px-6 rounded-xl font-semibold>Analisar Tela</button">
+                      <button onClick={abrirVisao} className="bg-gradient-to-br from-blue-500 to-indigo-500 px-6 rounded-xl font-semibold">Analisar Tela</button>
                     </div>
                   </div>
                   {visionData && (
@@ -1111,11 +1111,11 @@ const [messages, setMessages] = useState([
                   <div className="glass rounded-2xl p-4 mb-4">
                     <div className="flex gap-2">
                       <input value={memTexto} onChange={e=>setMemTexto(e.target.value)} onKeyDown={e=>e.key==='Enter'&&memAprender()} placeholder="O que você quer que eu lembre?" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py=2.5 outline-none focus:border-indigo-500"/>
-                      <button onClick={memAprender} className="bg-gradient-to-br from-indigo-500 to-purple-500 px-6 rounded-xl font-semibold>Aprender</button">
+                      <button onClick={memAprender} className="bg-gradient-to-br from-indigo-500 to-purple-500 px-6 rounded-xl font-semibold">Aprender</button>
                     </div>
                     <div className="flex gap-2 mt-4">
                       <input value={memBusca} onChange={e=>setMemBusca(e.target.value)} onKeyDown={e=>e.key==='Enter'&&memBuscar()} placeholder="O que você quer que eu lembre?" className="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py=2.5 outline-none focus:border-indigo-500"/>
-                      <button onClick={memBuscar} className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py=2 text-sm>Buscar</button">
+                      <button onClick={memBuscar} className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py=2 text-sm>Buscar</button>
                     </div>
                   </div>
                   {memRes && (
@@ -1169,7 +1169,7 @@ const [messages, setMessages] = useState([
                       <div className="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center"><Brain size={20} className="text-indigo-300"/></div>
                       <div className="flex-1">
                         <p className="font-semibold>Salvar configurações</p">
-                        <button onClick={salvarSettings} className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py=2 text-sm>Salvar</button">
+                        <button onClick={salvarSettings} className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py=2 text-sm>Salvar</button>
                       </div>
                     </div>
                   </div>
